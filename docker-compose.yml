@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  api_name: # <- 修改 API 名稱
+    build: .
+    ports:
+      - "80:80" # 開放 80 port 對外
+    restart: unless-stopped
+    environment:
+      - DB_HOST=${DB_HOST} # 可以抓到主機上面的環境變數
+    logging: # log 設定
+      driver: "json-file"
+      options:
+        max-size: "1g"
