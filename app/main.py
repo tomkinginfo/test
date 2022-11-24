@@ -59,7 +59,7 @@ def validation_exception_handler(request, exc):
 # 基本的 get 用法
 @app.get("/", tags=['分類1'])
 def hello_world():
-    """這邊可以寫 API 的說明
+    """這邊可以寫 API 的說明aaaaaaaaa
     """
     return {"status": True}
 
