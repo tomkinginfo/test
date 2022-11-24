@@ -11,13 +11,13 @@ import settings
 description = """
 ## 功能說明
 
-這邊可以寫這個API是支援甚麼服務
+這邊可以寫這個API是支援甚麼服務 test auto
 """
 
 app = FastAPI(
     title="<自定義服務名>",
     description=description,
-    version="x.x.x",
+    version="1.2.3",
     contact={
         "name": "<Johnny>",
         "email": "<johnnytan@kingsinfo.com.tw>",
